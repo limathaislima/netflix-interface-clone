@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Fair-Prosper';
+    src: url(https://www.dafont.com/fair-prosper.font) url(Fair-Prosper.ttf);
+    font-weight: light;
+}
+
+ul{
+    list-style: none;
+}
+
+

@@ -1,0 +1,446 @@
+:root{
+    --white: #f4f4f4;
+    --black: #141414;
+}
+
+/*TAGS*/
+body{
+    background-color: var(--black);
+
+    color: var(--white);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    letter-spacing: 0.4px;
+    
+}
+
+
+/*--------------CLASSES----------------*/
+/*-----HEADER-----*/
+.header{
+
+    padding: 15px 40px 10px 45px;
+    background-color: #000000;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /*Isso daqui garante que as divs dentro do header estejam alinhadas no meio verticalmente*/
+
+    position: fixed;
+
+    z-index: 1;
+
+}
+.header .logo{
+
+    width: 110px;
+    
+    
+}
+.header .logo img{
+    width: 110px;
+}
+.header .menu{
+
+    width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.header .menu .nav-bar{
+
+    width: 100%;
+    margin: 0 8px 3px 20px;
+    
+    display: flex;
+    align-items: center;
+
+}
+.header .menu .nav-bar ul{
+    display: flex;
+    align-items: center;
+
+}
+.header .menu .nav-bar a{
+
+    padding: 5px 8px;
+
+    color: #f4f4f4;
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.header .menu .nav-bar a:link{
+    color: #f4f4f4;
+}
+.header .menu .nav-bar a:hover{
+    transition: color 0.3s ease-in-out;
+}
+.header .menu .nav-bar .red:hover{
+    color: #E40303;
+}
+.header .menu .nav-bar .orange:hover{
+    color: #FF8C00;
+}
+.header .menu .nav-bar .yellow:hover{
+    color: #FFED00;
+}
+.header .menu .nav-bar .green:hover{
+    color: #16b044;
+}
+.header .menu .nav-bar .blue:hover{
+    color: #4671e4;
+}
+.header .menu .nav-bar .purple:hover{
+    color: #a42cbc;
+}
+
+
+/*Red: #E40303.
+Orange: #FF8C00.
+Yellow: #FFED00.
+Green: #008026.
+Indigo: #24408E.
+Violet: #732982.*/
+.header .menu .nav-bar a:visited{
+    color: #f4f4f4;
+}
+.header .menu .nav-bar a:active{
+    color: #f4f4f4;
+}
+
+.header .menu-right{
+
+    display: flex;
+    justify-self: right;
+
+    padding-right: 20px;
+   
+    align-items: center;
+   
+
+}
+.header .menu-right img{
+    width: 30px;
+    border-radius: 4px;
+}
+
+.header .menu-right span{
+    padding: 10px;
+}
+/*------FLAG------*/
+
+div .onelineflag{
+    width: 100%;
+    height: 3px;
+
+    position: fixed;
+    top: 68px;
+    
+    background: -webkit-linear-gradient(left, #E40303, #FF8C00, #FFED00, #16b044, #4671e4, #a42cbc);
+    background-size: auto 100%;
+    z-index: 1;
+    
+    /*animation: flag-animation-test 0.5s ease infinite;*/
+    /*background: linear-gradient(left, #E40303, #FF8C00, #FFED00, #16b044, #4671e4, #a42cbc)*/
+    /*-webkit-animation: flag-animation-test 6s linear;*/
+}
+
+@keyframes flag-animation-test{
+    0% {background: -webkit-linear-gradient(left, #E40303, #FF8C00, #FFED00, #16b044, #4671e4, #a42cbc)}
+    16.66% {background: -webkit-linear-gradient(left, #a42cbc, #E40303, #FF8C00, #FFED00, #16b044, #4671e4)}
+    33.33% {background: -webkit-linear-gradient(left, #4671e4, #a42cbc, #E40303, #FF8C00, #FFED00, #16b044)}
+    49.99% {background: -webkit-linear-gradient(left, #16b044, #4671e4, #a42cbc, #E40303, #FF8C00, #FFED00)}
+    66.65% {background: -webkit-linear-gradient(left, #FFED00, #16b044, #4671e4, #a42cbc, #E40303, #FF8C00)}
+    83.31% {background: -webkit-linear-gradient(left, #FF8C00, #FFED00 #16b044, #4671e4, #a42cbc, #E40303)}
+    100% {background: -webkit-linear-gradient(left, #E40303, #FF8C00, #FFED00, #16b044, #4671e4, #a42cbc)}
+}
+/*.flag{
+    padding-top: 60px;
+}
+.flag img{
+    width: 100%;
+    position: fixed;
+}*/
+/*
+.flag div{
+  
+
+    height: 3px;
+    width: 16%;
+
+    position: relative;
+    top: 76px;
+
+    display: inline-block;
+   
+}*/
+/*Animation*/
+/*
+@keyframes flag-animation{
+    from {background: -webkit-linear-gradient(left, #E40303, #FF8C00, #FFED00, #16b044, #4671e4, #a42cbc);}
+    to {background: -webkit-linear-gradient(left, #a42cbc, #E40303, #FF8C00, #FFED00, #16b044, #4671e4);}
+}
+*/
+
+
+
+/*
+@keyframes flag-animation-test{
+    0% {background: linear-gradient(left, #E40303, #FF8C00, #FFED00, #16b044, #4671e4, #a42cbc)}
+    16.66% {background: linear-gradient(left, #a42cbc, #E40303, #FF8C00, #FFED00, #16b044, #4671e4)}
+    33.33% {background: linear-gradient(left, #4671e4, #a42cbc, #E40303, #FF8C00, #FFED00, #16b044)}
+    49.99% {background: linear-gradient(left, #16b044, #4671e4, #a42cbc, #E40303, #FF8C00, #FFED00)}
+    66.65% {background: linear-gradient(left, #FFED00, #16b044, #4671e4, #a42cbc, #E40303, #FF8C00)}
+    83.31% {background: linear-gradient(left, #FF8C00, #FFED00 #16b044, #4671e4, #a42cbc, #E40303)}
+    100% {background: linear-gradient(left, #E40303, #FF8C00, #FFED00, #16b044, #4671e4, #a42cbc)}
+}*/
+
+
+    /*
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-timing-function: linear;*/
+/*
+@keyframes line-animation-one{
+    from{background: -webkit-linear-gradient(left, #E40303, #FF8C00)}
+    to{background: -webkit-linear-gradient(left, #a42cbc, #E40303)}
+}
+@keyframes line-animation-two{
+    from{background: -webkit-linear-gradient(left, #FF8C00, #FFED00)}
+    to{background: -webkit-linear-gradient(left, #E40303, #FF8C00)}
+}
+@keyframes line-animation-three{
+    from{background: -webkit-linear-gradient(left, #FFED00, #16b044)}
+    to{background: -webkit-linear-gradient(left, #FF8C00, #FFED00)}
+}
+@keyframes line-animation-four{
+    from{background: -webkit-linear-gradient(left, #16b044, #4671e4)}
+    to{background: -webkit-linear-gradient(left, #FFED00, #16b044)}
+}
+@keyframes line-animation-five{
+    from{background: -webkit-linear-gradient(left, #4671e4, #a42cbc)}
+    to{background: -webkit-linear-gradient(left, #16b044, #4671e4)}
+}
+@keyframes line-animation-six{
+    from{background: -webkit-linear-gradient(left, #a42cbc, #E40303)}
+    to{background: -webkit-linear-gradient(left, #4671e4, #a42cbc)}
+}*/
+
+
+/*
+div .line.red{
+    background: -webkit-linear-gradient(left, #E40303, #FF8C00); 
+    /*animation-name: line-animation-one;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+div .line.orange{
+    background: -webkit-linear-gradient(left, #FF8C00, #FFED00); 
+    animation-name: line-animation-two;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+div .line.yellow{
+    background: -webkit-linear-gradient(left, #FFED00, #16b044); 
+    animation-name: line-animation-three;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+div .line.green{
+    background: -webkit-linear-gradient(left, #16b044, #4671e4); 
+    animation-name: line-animation-four;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+div .line.blue{
+    background: -webkit-linear-gradient(left, #4671e4, #a42cbc); 
+    animation-name: line-animation-five;
+    animation-duration: 5s;
+    animation-delay:2s;
+}
+div .line.purple{
+    background: -webkit-linear-gradient(left, #a42cbc, #E40303); 
+    animation-name: line-animation-six;
+    animation-duration: 5s;
+    animation-delay:2s;
+}*/
+
+
+/*-----MAIN-----*/
+.main{
+ 
+    height: 100%;
+    position: relative;
+    z-index: 0;
+
+}
+.billboard{
+
+    padding: 20px 40px 10px 45px;
+    background-image: url(../img/podert-horizontal-retratosdeumajovem-03.jpg);
+    height:600px;
+}
+
+.main-film{
+
+    height: 430px;
+    width: 650px;
+
+    position: relative;
+    top: 55px;
+    left: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+
+}
+.main-film-category{
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    color: rgba(237, 237, 237, 0.7);
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.main-film-category img{
+    width: 30px;
+    padding-right: 3px;
+
+}
+.main-film .title{
+
+    height: 190px;
+
+    padding-top: 35px;
+    margin-top: 20px;
+
+    font-size: 60px;
+    font-family: 'Fair-Prosper';
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.main-film .title .retrato{
+    font-size: 80px;
+}
+.main-film .description{
+
+    padding: 10px 0 5px 0;
+    width: 463px;
+
+    font-size: 14px;
+}
+.main-film .buttons{
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    top: 10px;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    height: 65px;
+    
+}
+.main-film .buttons .watch a{
+    background-color: rgb(244, 244, 244);
+    border-radius: 4px;
+
+    color: #141414;
+    font-weight: 550;
+    
+   
+    text-align: center;
+    align-items: center;
+
+    padding: 10px 20px;
+    margin-right: 10px;
+
+    cursor: pointer;
+
+}
+
+.main-film .buttons .info a{
+    background-color: rgba(163, 163, 163, 0.6) ;
+    border-radius: 4px;
+
+    color: #f4f4f4;
+    font-weight:550;
+   
+   
+    text-align: center;
+
+    padding: 10px 35px;
+
+    
+   
+}
+
+.main-film .buttons .watch a:hover{
+    background-color: rgba(244, 244, 244, 0.7);
+    
+
+}
+.main-film .buttons .info a:hover{
+    background-color: rgba(163, 163, 163, 0.2);
+   
+
+}
+/*------OTHER-FILMS------*/
+.other-films{
+
+    padding-left: 45px;
+    padding-right: 40px;
+
+    position: relative;
+    top: -70px ;
+}
+
+.line{
+    height: 160px ;
+    
+}
+
+.line .line-carousel{
+    border: 1xp solid red;
+  
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    overflow-x: hidden;
+
+}
+
+.line .line-carousel img{
+    border-radius: 3px;
+    width: 230px;
+    padding: 0 3px;
+
+    border-radius: 3px;
+
+    overflow-x: hidden;
+    
+    
+}
+
+
+/*-------FOOTER------*/
+
+footer{
+    margin: 40px 15px;
+}
